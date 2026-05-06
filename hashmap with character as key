@@ -1,0 +1,25 @@
+import java.util.HashMap;
+
+public class Main {
+    public static void main(String[] args) {
+        HashMap<Character, Integer> map = new HashMap<>();
+        map.put('a', 1);
+        map.put('b', 2);
+        map.put('c', 3);
+        System.out.println("Map: " + map);
+        System.out.println("Value for 'a': " + map.get('a'));
+        System.out.println("Contains 'b'? " + map.containsKey('b'));
+        map.remove('c');
+        System.out.println("After removing 'c': " + map);
+
+        map.clear();
+        System.out.println("After clear: " + map);
+    }
+}
+
+output
+Map: {a=1, b=2, c=3}
+Value for 'a': 1
+Contains 'b'? true
+After removing 'c': {a=1, b=2}
+After clear: {}
