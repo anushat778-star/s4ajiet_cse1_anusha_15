@@ -1,0 +1,14 @@
+import java.util.LinkedList;
+
+public class Main {
+    public static void main(String[] args) {
+        LinkedList<String> cse = new LinkedList<>();
+
+        cse.add("20");
+        cse.add("30");
+        cse.add("20");
+
+        System.out.println(cse);
+        System.out.println(cse.get(0));
+    }
+}
