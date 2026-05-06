@@ -1,0 +1,24 @@
+import java.util.LinkedHashMap;
+
+public class Main {
+    public static void main(String[] args) {
+        LinkedHashMap<Integer, String> map = new LinkedHashMap<>();
+        map.put(101, "Alice");
+        map.put(103, "Charlie");
+        map.put(102, "Bob");
+        System.out.println("Initial map: " + map);
+        System.out.println("Name for 101: " + map.get(101));
+        System.out.println("Contains key 103? " + map.containsKey(103));
+        map.remove(102);
+        System.out.println("After removing 102: " + map);
+        map.clear();
+        System.out.println("After clear: " + map);
+    }
+}
+ouput
+    
+Initial map: {101=Alice, 102=Bob, 103=Charlie}
+Name for 101: Alice
+After removing key 102: {101=Alice, 103=Charlie}
+Contains key 103? true
+After clear: {}
